@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="address.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" src="../Common Files/image/hello.jpg" alt="">
+
+        <div id="nav2">
+            <a href="../wishlist/cart.html">
+                <h5 id="first">BAG</h5>
+            </a>
+            <div class="line"></div>
+            <a href="address.html">
+                <h5>ADDRESS</h5>
+            </a>
+            <div class="line"></div>
+            <a href="payment.html">
+                <h5 id="third">PAYMENT</h5>
+            </a>
+            
+        </div>
+        <div id="nav3">
+            <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="">
+            <p>100% <b>SECURE</b></p>
+        </div>
+    </div>
+    <div id="cart">
+        <div id="div">
+            <div>
+                <h3>Select Delivery Address </h3>
+                <div>
+                    <h5>ADD NEW ADDRESS</h5>
+                </div>
+            </div>
+            <h5>DEFAULT ADDRESS</h5>
+            <div>
+                <div id="name">
+                    <div>
+                        <h4>　　　　　アリフ　　　　　　　　　　　　　　</h4>
+                    </div>
+                    <div id="home">Home</div>
+                </div>
+                <p>　705-8509
+                    
+                    岡山県津山市沼624-1　津山工業高等専門学校　北辰寮</p>
+                <p>Mobile No: <b>070-xxxx-6392</b></p>
+                <p>Pay on Delivery</p>
+                <div id="option">
+                   <div>
+                       Remove
+                   </div> 
+                   <div>
+                       EDIT
+                   </div>
+                </div>
+            </div>
+            <div id="add">
+                 +Add New Address  
+            </div>
+        </div>
+        <div id="checkDiv">
+           
+            <div id="itemDiv">
+                <h5>DELIVERY ESTIMATES</h5>
+                Delivery Between 13Feb to 14Feb
+                <br>
+                
+            </div>
+            <a href="payment.html"> <div id="place">
+            CONTINUE
+         </div></a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    document.querySelector('img').addEventListener('click', function(){
+        window.location.href = "../Landingpage/index.html"
+    })
+
+document.getElementById('first').addEventListener('click', function(){
+window.location.href = "../wishlist/cart.html"
+})
+  document.getElementById('third').addEventListener('click', function(){
+  window.location.href = "../payment/payment.html"
+})
+</script>
+

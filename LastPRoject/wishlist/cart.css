@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+    --primaryFont : 'DM Sans', sans-serif;
+    --charSpace : 6px; 
+    --primaryColor : #3e4152;
+    --secondaryColor : #fafbfc;
+}
+a:link{
+    text-decoration: none;
+}
+body{
+    padding: 0; 
+    font-family: var(--primaryFont);
+    scroll-behavior: smooth;
+}
+
+
+#navbar{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;  
+}
+#logo{
+    width: 60px;
+    height:60px;
+    width: 10%;
+    background-color: white;
+}
+#nav2{
+    letter-spacing:3px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+
+}
+#nav2>h5:last-child{
+    color:#3cc3a0;
+   border-bottom:#3cc3a0 2px solid;
+}
+#nav3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#nav3>img{
+   width: 30px;
+}
+
+#nav3 img {
+    width: 10px;  /* Ubah sesuai kebutuhan */
+    height: auto; /* Menjaga aspek rasio */
+}
+
+p>b{
+    letter-spacing:3px;
+}
+.line{
+    border-top: 1px dashed;
+    width: 50px;
+}
+
+#first, #second{
+    cursor: pointer;
+}
+#timerbox{
+    text-align: center;
+    border-bottom: 1px solid #F5F5F6;
+   color: gray;
+   font-size: 20px;
+}
+#timerbox span{
+    color:#fe3f9b;
+}
+.container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.main{
+    width: 80%;
+    padding: 1rem;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.main >div{
+    padding: 8px ;
+    width: 30%;
+}
+.main img{
+    width: 100%;
+}
+.main >div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main button{
+    width: 80%;
+}
+
+.wishlistlink{
+ margin-top: 40px;
+ height: 40px;
+ margin-left: 144px;
+ width: 45.7%;
+ border :2px solid #F5F5F6;
+ border-radius: 4px;
+ display: flex;
+ font-size: 20px;
+ align-items: center;
+ cursor: pointer;
+}
+.wishlistlink >p, .wishlistlink >i{
+margin: 5px;
+}
+.wishlistlink > p:hover{
+    color:#32cd32;
+    font-weight: 900;
+    border-bottom: 2px solid #1e90ff;
+}
+.container span{
+    margin: 4px;
+}
+.orderbox{
+    align-self: flex-start;
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.con_ord{
+    display:grid;
+    grid-template-columns: 60% 35%;
+    justify-content: center;
+}
+.orderbox>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    color: #535766;
+    
+}
+.promocode{
+    display:block
+}
+button{
+    background-color: #1e90ff;
+    color: white;
+    border: 10px;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+.amount{
+    font-weight: bold;
+}
+.filldiscount{
+    color:#32cd32;
+    text-decoration: none;
+}
+.pricedets,.amount{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.orderbox .makeorder,.apply{
+    justify-content: center;
+    background-color: #1e90ff;
+    padding: 0.7rem 1.2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.orderbox .makeorder{
+    margin-top: 30px;
+}
+#promo{
+    border: 1px solid #1e90ff;
+    padding-left: 15px;
+    border-radius: 5px;
+    
+}
+.amount + p{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+/* MEDEIA QUERIES FOR TABLET VIEW */
+@media all and (min-width: 721px) and (max-width: 850px){
+    .container{
+     margin-top: 20px;
+      margin-left: 10px;
+       width: 60%;
+       display: -moz-grid-line;
+       grid-template-columns: repeat(1,1fr);
+       gap: 10px;
+    }
+    .promocode{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .apply{
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #promo{
+        height: 30px;
+    }
+       
+}
+
+@media all and (max-width: 720px){
+    .con_ord{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 5px;
+    }
+    .container{
+        margin: auto;
+          width: 90%;
+          display: -moz-grid-line;
+          grid-template-columns: repeat(1,1fr);
+          gap: 10px;
+       }
+       .orderbox{
+        height: 400px;
+        width: 50%;
+        margin: auto;
+        border :2px solid #F5F5F6;
+        margin-top: 80px;
+        padding: 20px;
+        border-radius: 4px;
+    }
+    #upperbar >div{
+       margin: 5px 5px;
+    
+    }
+    #upperbar >div:first-child{
+        margin-left: 10px;
+    }
+    #upperbar >div:last-child{
+        margin-right: 10px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+       
+}
+a {
+    text-decoration: none;
+}
+
+#div2{
+    letter-spacing:3px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+
+}
+#div2>h5:last-child{
+    color:#3cc3a0;
+   border-bottom:#3cc3a0 2px solid;
+}
+
+.line{
+    border-top: 1px dashed;
+    width: 50px;
+}
+#nav3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#nav3>img{
+   width: 50px;
+}
